@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever - Книга о неразделенной любви</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./assets/favicon2.png" type="icon">
+</head>
+
+<body>
+  <!-- Хедер -->
+  <header>
+    <h3>Forever</h3>
+    <nav>
+      <a href="#about">О книге</a>
+      <a href="#read">Читать</a>
+      <a href="#listen">Слушать</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Главный экран -->
+  <section id="hero">
+    <h1 class="hero-title">Forever: Путь к свету.</h1>
+    <div class="hero-content">
+      <h2>История неразделенной любви</h2>
+      <a href="#read">
+        <button id="readBtn">Читать книгу (PDF)</button>
+      </a>
+      <a href="#listen">
+        <button id="listenBtn">Слушать аудиокнигу</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- О книге -->
+  <section id="about" class="section-with-background">
+    <h2>О книге</h2>
+    <p>Книга "Forever" — это трогательная история о неразделенной любви, о том, как сложно отпустить того, кого любишь.
+      Погрузитесь в мир глубоких чувств и переживаний.</p>
+  </section>
+
+  <!-- Читать книгу -->
+  <section id="read" class="section-with-background">
+    <h2>Читать книгу</h2>
+    <a href="./assets/foreverText.pdf" target="_blank" class="button">Скачать PDF</a>
+  </section>
+
+  <!-- Слушать книгу -->
+  <section id="listen">
+    <h2>Слушать аудиокнигу</h2>
+    <audio controls id="audioPlayer">
+      <source src="./assets/audio/ForeverN0.m4a" type="audio/mpeg">
+      Ваш браузер не поддерживает аудиопроигрыватель.
+    </audio>
+    <div id="playlist"></div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <p>&copy; 2024 Forever. Все права защищены.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
