@@ -1,3 +1,19 @@
+//кнопка бургер
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+document.addEventListener('click', (e) => {
+  if (!burger.contains(e.target) && menu.contains(e.target)) {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+  }
+});
+
 // Элементы DOM
 const audioPlayer = document.getElementById('audioPlayer');
 const playlist = document.getElementById('playlist');
@@ -10,12 +26,12 @@ const audioFiles = [
   { title: 'Часть 4', src: './assets/audio/ForeverN4.m4a' },
   { title: 'Часть 5', src: './assets/audio/ForeverN5.m4a' },
   { title: 'Часть 8', src: './assets/audio/ForeverN8.m4a' },
-  { title: 'Часть 10', src: './assets/audio/ForeverN10.m4a' },
-  { title: 'Часть 16', src: './assets/audio/ForeverN16.m4a' },
-  { title: 'Часть 17', src: './assets/audio/ForeverN17.m4a' },
-  { title: 'Часть 19', src: './assets/audio/ForeverN19.m4a' },
-  { title: 'Часть 20', src: './assets/audio/ForeverN20.m4a' },
-  { title: 'Часть 21', src: './assets/audio/ForeverN21.m4a' }
+  { title: 'Часть 10', src: './assets/audio/ForeverN10.mp3' },
+  { title: 'Часть 12', src: './assets/audio/ForeverN12.mp3' },
+  { title: 'Часть 16', src: './assets/audio/ForeverN16.mp3' },
+  { title: 'Часть 17', src: './assets/audio/ForeverN17.mp3' },
+  { title: 'Часть 19', src: './assets/audio/ForeverN19.mp3' },
+  { title: 'Часть 21', src: './assets/audio/ForeverN21.mp3' }
 ];
 
 // Создаем плейлист
